@@ -1,7 +1,8 @@
 # Core test framework
 pytest==8.3.3
 pytest-playwright==0.5.0
-pip install python-dotenv
+python-dotenv==1.0.1
+
 
 # Playwright browser automation
 playwright==1.48.0
