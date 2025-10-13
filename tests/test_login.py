@@ -22,6 +22,7 @@ import allure
 @allure.severity(allure.severity_level.CRITICAL)
 @allure.feature("Login")
 @allure.story("Positive login flow") 
+vgbhujiko k
 def test_signin(page, login_data):
     signin_page = SignInPage(page)
     signin_page.signin(login_data["email"], login_data["pwd"])
