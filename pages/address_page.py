@@ -55,8 +55,9 @@ class Address(BasePage):
         self.save_button.click()
         
     def add_new_address(self):
-        self.add_new_address_button.click()    
-   def is_add_new_address_button_visible(self):
+        self.add_new_address_button.click()  
+
+    def is_add_new_address_button_visible(self):
         return self.my_address_button.is_visible()    
         
     def is_add_new_address_button_visible(self):
