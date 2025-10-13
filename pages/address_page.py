@@ -56,18 +56,19 @@ class Address(BasePage):
         
     def add_new_address(self):
         self.add_new_address_button.click()    
-        
+   def is_add_new_address_button_visible(self):
+        return self.my_address_button.is_visible()    
         
     def is_add_new_address_button_visible(self):
         return self.my_address_button.is_visible()
     
     def no_address_available_info_visible(self):
-        ccccccccccccc
         try:
             self.no_address_paragraph.wait_for(state="visible")
             return True
         except:
             return False
+
     
     def delete_existing_address(self):
         self.page.once("dialog", lambda dialog: dialog.accept())   
