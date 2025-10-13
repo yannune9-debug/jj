@@ -9,6 +9,12 @@ import allure
     #create_login_data({"isValidEmail": True, "isInValidPWD": True}),
 ])
 
+@pytest.mark.parametrize("login_data", [
+    #create_login_data({"isValidEmail": True, "isValidPWD": True}),
+    create_login_data({"isInValidEmail": True, "isInValidPWD": True}),
+    #create_login_data({"isValidEmail": True, "isInValidPWD": True}),
+])
+
 
 
 @allure.title("Login with valid credentials")
