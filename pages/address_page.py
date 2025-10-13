@@ -53,6 +53,9 @@ class Address(BasePage):
         self.title.fill(title)
         self.save_button.click()
         
+    def navigate_to_my_addresses(self):
+        self.my_address_button.click()
+    
     def add_new_address(self):
         self.add_new_address_button.click()    
         
