@@ -39,9 +39,7 @@ class Address(BasePage):
         
     def navigate_to_my_addresses(self):
         self.my_address_button.click() 
-
-    def is_add_new_address_button_visible(self):
-        return self.my_address_button.is_visible()       
+   
         
     def fill_out_address(self, firstName: str, lastName: str, 
                          address: str, city: str, state: str, country: str,
@@ -60,17 +58,11 @@ class Address(BasePage):
         self.add_new_address_button.click()    
         
         
-    def no_address_available_info_visible(self):
-        try:
-            self.no_address_paragraph.wait_for(state="visible")
-            return True
-        except:
-            return False
-        
     def is_add_new_address_button_visible(self):
         return self.my_address_button.is_visible()
     
     def no_address_available_info_visible(self):
+        ccccccccccccc
         try:
             self.no_address_paragraph.wait_for(state="visible")
             return True
