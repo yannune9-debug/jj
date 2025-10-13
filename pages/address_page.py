@@ -38,7 +38,10 @@ class Address(BasePage):
         self.address_title = page.locator(self.ADDRESS_TITLE)
         
     def navigate_to_my_addresses(self):
-        self.my_address_button.click()    
+        self.my_address_button.click() 
+
+    def is_add_new_address_button_visible(self):
+        return self.my_address_button.is_visible()       
         
     def fill_out_address(self, firstName: str, lastName: str, 
                          address: str, city: str, state: str, country: str,
