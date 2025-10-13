@@ -58,7 +58,8 @@ class Address(BasePage):
         
     def add_new_address(self):
         self.add_new_address_button.click()    
-        
+   def is_add_new_address_button_visible(self):
+        return self.my_address_button.is_visible()    
         
     def no_address_available_info_visible(self):
         try:
