@@ -59,7 +59,7 @@ def test_address_1(page, load_address_data, create_and_cleanup_address):
                                     load_address_data["city"],load_address_data["state"],load_address_data["country"],
                                     load_address_data["mobile"],load_address_data["zip"],load_address_data["title"])
         
-    assert address_page.address_title.text_content() == "aaaa"   
+    assert address_page.address_title.text_content() == load_address_data["title"]
  
         
 
