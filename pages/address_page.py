@@ -31,6 +31,7 @@ class Address(BasePage):
         self.mobile = page.locator(self.MOBILE)
         self.title = page.locator(self.TITLE)
         44444444
+        sssssssssssssssssssssssss
         self.save_button = page.locator(self.SAVE_BUTTON) 
         self.add_new_address_button = page.locator(self.ADD_NEW_ADDRESS_BUTTON)
         self.delete_address_button = page.locator(self.DELETE_ADDRESS_BUTTON)
