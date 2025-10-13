@@ -24,6 +24,6 @@ def test_signin(page, login_data):
         assert page.url.endswith("controller=my-account")
     
     else:
-        assert signin_page.get_error_message() == "Invalid password."  
+        assert signin_page.get_error_message() == "Invalid password1."  
 
    
