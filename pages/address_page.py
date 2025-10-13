@@ -59,9 +59,6 @@ class Address(BasePage):
 
     def is_add_new_address_button_visible(self):
         return self.my_address_button.is_visible()    
-        
-    def is_add_new_address_button_visible(self):
-        return self.my_address_button.is_visible()
     
     def no_address_available_info_visible(self):
         try:
